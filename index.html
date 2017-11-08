@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+C#系统时间相关的类
+<meta charset="utf-8">
+<title>C# 系统时间</title>
+</head>
+
+<body>
+<p> 
+<strong>获取日期+时间</strong>
+<br>string currenttime  = DateTime.Now.ToString(); // ToString() 方法可以不用加
+<br>DateTime.Now.ToLocalTime()//另外的一种方法
+</p>
+
+<p>
+<strong>获取日期</strong>
+<br>string curentdate = DateTime.Now.ToLongDateString();
+<br>DateTime.Now.ToShortDateString();
+<br>DateTime.Now.ToString("yyy-MM-dd")
+</p>
+
+<p>
+<strong>获取时间</strong>
+<br>DateTime.Now.ToLongTimeString()
+<br>DateTime.Now.ToShortTimeString()
+<br>DateTime.Now.ToString("hh:mm:ss")
+<br>DateTime.Now.TimeOfDay.ToString()
+</p>
+
+<p>
+<strong>其他时间获取</strong>
+<br>DateTime.ToFileTime().ToString()
+<br>DateTime.Now.ToFileTimeUtc().ToString()
+<br>DateTime.Now.ToOADate().ToString()
+<br>DateTime.Now.ToUniverdalTime().ToString()
+</p>
+
+<p>
+<strong>单独获取</strong>
+<br>下方都为int类型
+<br>DateTime.Now.Year  //获取年份
+<br>DateTime.Now.Month	//获取月份
+<br>DateTime.Now.DayOfWeek	//获取星期（Thursday）
+<br>DateTime.Now.DayOfYear	//获取一年的第几天
+<br>DateTime.Now.Hour	//获取小时
+<br>DateTime.Now.Minute	//获取分钟
+<br>DateTime.Now.Second //获取秒数
+</p>
+</body>
+</html>
